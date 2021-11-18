@@ -15,16 +15,25 @@ function init() {
 }
 
 function menuClick(event) {
-    let details = document.querySelectorAll(".details");
-    for (let item of details) {
-        item.style.display = "none";
-    }
-    let parentElem = this.parentElement;
-    for (let sibilingOfTarget of parentElem.children) {
-        if (sibilingOfTarget.getAttribute("class") === "details") {
-            sibilingOfTarget.style.display = "block";
+    let currentDetails = this.parentElement.querySelector(".details");
+    if (currentDetails.style.display === "block") {
+        currentDetails.style.display = "none"
+    } else {
+        let listOfDetails = document.querySelectorAll(".details");
+        for (let item of listOfDetails) {
+            item.style.display = "none";
         }
+        currentDetails.style.display = "block";
     }
+
+
+    // let parentElem = this.parentElement;
+    // parentElem.querySelector(".details").style.display = "block";
+    // for (let sibilingOfTarget of parentElem.children) {
+    //     if (sibilingOfTarget.getAttribute("class") === "details") {
+    //         sibilingOfTarget.style.display = "block";
+    //     }
+    // }
 }
 
 function referenceClick(event) {
