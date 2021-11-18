@@ -7,11 +7,12 @@ html, body {
  #container {
     min-height:100%;
     position:relative;
- }
+}
 
- #content {
+#content {
     min-height:100%;
     position:relative;
+    padding: 10%;
  }
 
  footer {
@@ -24,12 +25,24 @@ html, body {
 
  .main {
      display: block;
+     min-height: 10%;
+     margin-top: 5%;
+     margin-bottom: 5%;
  }
 
  .reference {
      display: none;
  }
 
- .contactData {
+ .details {
      display: none;
+     margin-left: 5%;
+ }
+
+ h3 {
+     margin-top: 2em;
+ }
+
+ .menuItem {
+     color: blue;
  }
