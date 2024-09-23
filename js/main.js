@@ -1,14 +1,14 @@
 
 function init() {
-    attachEventListeners(".menuItem", menuClick);
-    attachEventListeners(".referenceItem", referenceClick);
-    attachEventListeners(".back", goBack);
+    attachEventListeners(".menuItem", "mouseover", menuClick);
+    attachEventListeners(".referenceItem", "mouseover", referenceClick);
+    attachEventListeners(".back", "click", goBack);
 }
 
-function attachEventListeners(selector, eventHandler) {
+function attachEventListeners(selector, eventType, eventHandler) {
     let elemList = document.querySelectorAll(selector);
     for (let elem of elemList) {
-        elem.addEventListener("click", eventHandler);
+        elem.addEventListener(eventType, eventHandler);
     }
 }
 
