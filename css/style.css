@@ -12,7 +12,7 @@ html, body {
 #content {
     min-height:100%;
     position:relative;
-    padding: 10%;
+    padding: 0 2rem;
  }
 
  footer {
@@ -26,8 +26,8 @@ html, body {
  .menu {
      display: block;
      min-height: 10%;
-     margin-top: 5%;
-     margin-bottom: 5%;
+     margin-top: 2rem;
+     margin-bottom: 2rem;
  }
 
  .reference {
@@ -45,4 +45,9 @@ html, body {
 
  .menuItem {
      color: blue;
+ }
+
+ .doubleColumn {
+    display: flex;
+    justify-content: space-around;
  }
