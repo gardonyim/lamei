@@ -2,81 +2,80 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js" defer></script>
     <title>LAMEI Kft.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/648f19b549.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="container">
-        <header>
-            <img src="img/lamei_logo_c.svg" alt="LAMEI logo">
-        </header>
-        <section id="content">
-            <div class="menu" id="services">
-                <p class="menuItem">Tevékenységeink:</p>
-                <div class="details">
-                    <ul>
-                        <li>Helyi rádiókörzet tervezés vasúti környezetben</li>
-                        <li>Vonali rádiórendszer tervezés vasúti környezetben</li>
-                        <li>Mozdonyrádió beépítés tervezés</li>
-                        <li>AIRCOM rendszer tervezése</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="menu" id="references">
-                <p class="menuItem">Referenciáink:</p>
-                <div class="details">
-                    <ol>
-                        <li class="referenceItem" id="refName1">Pusztaszabolcs vasútállomás helyi rádiókörzet tervezés</li>
-                        <li class="referenceItem" id="refName2">Püspökladány - Biharkeresztes vonal vonali rádiórendazer tervezés</li>
-                        <li class="referenceItem" id="refName3">Debreceni SITA AIRCOM rendszer tervezése</li>
-                    </ol>
-                </div>
-            </div>
-            <div class="menu" id="contacts">
-                <p class="menuItem">Elérhetőségeink és cégadatok</p>
-                <div class="details">
-                    <h2>LAMEI Kft.</h2>
-                    <div class="doubleColumn">
-                        <span>
-                            <h3>Kapcsolat:</h3>
-                            <h4>Székhely: 1121 Budapest, Alkony út 26/A</h4>
-                            <h4>E-mail: info@lamei.hu</h4>
-                            <h4>Telefon: +36 70 244 7468</h4>
-                        </span>
-                        <span>
-                            <h3>Cégadatok:</h3>
-                            <h4>Cégjegyzékszám: 01 09 391491</h4>
-                            <H4>Adőszám: 27434095-2-43</H4>
-                            <h4>Bankszámlaszám: 16200010-10116498 (MagNet Bank)</h4>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="reference" id="refArticle1">
-                <h2>Pusztaszabolcs vasútállomás helyi rádiókörzet tervezés</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit consectetur dictum. Maecenas auctor enim eget sagittis sagittis. Integer consectetur dui lacus, quis aliquet velit egestas id. Mauris hendrerit sed est ac porttitor. Praesent scelerisque quam eget scelerisque aliquet. Fusce nunc nulla, aliquet quis mollis at, placerat sed diam. Sed dapibus aliquam sem dignissim placerat. Etiam congue nulla elementum nibh interdum, in ornare sem semper. Mauris id leo sit amet orci viverra pellentesque facilisis imperdiet turpis.
-                </p>
-                <button class="back">Vissza!</button>
-            </div>
-            <div class="reference" id="refArticle2">
-                <h2>Püspökladány - Biharkeresztes vonal vonali rádiórendazer tervezés</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit consectetur dictum. Maecenas auctor enim eget sagittis sagittis. Integer consectetur dui lacus, quis aliquet velit egestas id. Mauris hendrerit sed est ac porttitor. Praesent scelerisque quam eget scelerisque aliquet. Fusce nunc nulla, aliquet quis mollis at, placerat sed diam. Sed dapibus aliquam sem dignissim placerat. Etiam congue nulla elementum nibh interdum, in ornare sem semper. Mauris id leo sit amet orci viverra pellentesque facilisis imperdiet turpis.
-                </p>
-                <button class="back">Vissza!</button>
-            </div>
-            <div class="reference" id="refArticle3">
-                <h2>Debreceni SITA AIRCOM rendszer tervezése</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit consectetur dictum. Maecenas auctor enim eget sagittis sagittis. Integer consectetur dui lacus, quis aliquet velit egestas id. Mauris hendrerit sed est ac porttitor. Praesent scelerisque quam eget scelerisque aliquet. Fusce nunc nulla, aliquet quis mollis at, placerat sed diam. Sed dapibus aliquam sem dignissim placerat. Etiam congue nulla elementum nibh interdum, in ornare sem semper. Mauris id leo sit amet orci viverra pellentesque facilisis imperdiet turpis.
-                </p>
-                <button class="back">Vissza!</button>
-            </div>
-        </section>
-        <footer>
-            LAMEI Kft. info@lamei.hu
-        </footer>
+   
+  <div class="startpage">
+    <div class="topnav" id="myTopnav">
+        <div class="logo-lamei"></div>
+        <a class="icon" id="hamburger">
+          <span class="fa fa-bars"></span>
+        </a>
+        <div class="menuContainer">
+            <a class="menu" href="#services">TEVÉKENYSÉGEINK</a>
+            <a class="menu" href="#references">REFERENCIÁINK</a>
+            <a class="menu" href="#contacts">KAPCSOLAT</a>
+        </div>
     </div>
+    <div class="trainimage"></div>
+  </div>
+
+  <div class="activities" id="services">
+    <p class="headline futurabold">TEVÉKENYSÉGEINK:</p>
+    <div class="wrap">
+      <div class="wrap">
+        <div class="card"><img src="img/lameiactivity1.svg" alt="local radio district" class="graphic"><p class="actdescription">Helyi rádiókörzet tervezés vasúti környezetben</p></div>
+        <div class="card"><img src="img/lameiactivity2.svg" alt="line radio system" class="graphic"><p class="actdescription">Vonali rádiórendszer tervezés vasúti környezetben</p></div>
+      </div>
+      <div class="wrap">
+        <div class="card"><img src="img/lameiactivity3.svg" alt="train radio" class="graphic"><p class="actdescription">Mozdonyrádió beépítés tervezés</p></div>
+        <div class="card"><img src="img/lameiactivity4.svg" alt="AIRCOM system" class="graphic"><p class="actdescription">AIRCOM rendszer tervezése</p></div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="references wrapped" id="references">
+    <div class="headline futurabold">REFERENCIÁINK</div>
+    <ul>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Pusztaszabolcs vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Dunai Finomító vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Győr vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Bicske vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Tatabánya vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Komárom vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Mosonmagyaróvár vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Almásfüzítő vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Röszke vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Nyékládháza vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Püspökladány vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Biharkeresztes vasútállomás helyi rádiókörzet tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Püspökladány - Biharkeresztes vonal vonali rádiórendszer tervezés</li>
+      <li><i class="fa-solid fa-circle-chevron-right"></i>Debreceni SITA AIRCOM rendszer tervezése</li>
+    </ul>
+  </div>
+  <div class="contact" id="contacts">
+    <div class="info">
+      <p>KAPCSOLAT:</p>
+      <li>Székhely: 1121 Budapest, Alkony út 26/A</li>
+      <li>E-mail: info@lamei.hu</li>
+      <li>Telefon: +36 70 244 7468</li>
+    </div>
+    <div class="info">
+      <p>LAMEI Kft.:</p>
+      <li>Cégjegyzékszám: 01 09 391491</li>
+      <li>Adószám: 27434095-2-43</li>
+      <li>Bankszámlaszám: 16200010-10116498 (MagNet Bank)</li>
+    </div>
+  </div>
+
+<script>
+  
+</script>
+
 </body>
 </html>

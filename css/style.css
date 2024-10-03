@@ -1,53 +1,187 @@
-html, body {
-    margin:0;
-    padding:0;
-    height:100%;
- }
-
- #container {
-    min-height:100%;
-    position:relative;
+@font-face {
+    font-family: Futura;
+    src: url(fonts/FutuMd.ttf);
 }
 
-#content {
-    min-height:100%;
-    position:relative;
-    padding: 0 2rem;
- }
+@font-face {
+    font-family: FuturaBold;
+    src: url(fonts/FuturaBoldBT.ttf);
+}
 
- footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:50px;
-    background:#fff;
- }
+@media screen and (max-width: 900px) {
+    .topnav .menuContainer {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+      background-color: #ffffff00;
+      border: none;
+    }
+  }
 
- .menu {
-     display: block;
-     min-height: 10%;
-     margin-top: 2rem;
-     margin-bottom: 2rem;
- }
+@media screen and (max-width: 900px) {
+    .topnav.menuOpen .menuContainer {
+        position: relative;
+        display: block;
+    }
+    .topnav.menuOpen a.icon {
+      position: relative;
+      right: 0;
+      top: 0;
+    }
+    .topnav.menuOpen a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+  }
 
- .reference {
-     display: none;
- }
-
- .details {
-     display: none;
-     margin-left: 5%;
- }
-
- h3 {
-     margin-top: 2em;
- }
-
- .menuItem {
-     color: blue;
- }
-
- .doubleColumn {
+.trainimage {
     display: flex;
-    justify-content: space-around;
- }
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url('/img/train.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 0 10% 5%;
+}
+
+.startpage {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.topnav {
+    padding: 15px 10%;
+    gap: 2.5vw;
+    background-color: white;
+    align-items: center;
+    color: rgb(31, 69, 100);
+    overflow: hidden;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.topnav .fa {
+    padding: 0;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: rgb(31, 69, 100);
+    font-size: calc(16px + .2vw);
+    padding: 8px 16px;
+    text-align: center;
+}
+
+.menuContainer {
+    float: right;
+}
+
+.logo-lamei {
+    height: calc(5.9px + 2.95vh + .75vw);
+    width: calc(28px + 14vh + 3.5vw);      /* 28x5.9 az eredeti */
+    background-size: cover;
+    background-image: url(/img/lameilogo.svg);
+    float: left;
+}
+
+body {
+    margin: 0;
+    font-family: Futura, Georgia, 'Times New Roman', Times, serif;
+    font-size: calc(14px + .4vw);
+}
+
+.graphic {
+    width: 15vw;
+    max-width: 100px;
+    min-width: 75px;
+    flex-shrink: 0;
+}
+
+.activities {
+    box-sizing: border-box;
+    padding: 6vh 8vw 12vh;
+    color: rgb(31, 69, 100);;
+}
+
+.wrap{
+    gap: calc(30px + 3vw);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.headline {
+    font-size: calc(15px + 1vw);
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-width: 40vw;
+    min-width: 280px;
+    max-width: 420px;
+    flex: 1;
+}
+
+.actdescription {
+    font-size: calc(16px + .5vw);
+    color: rgb(39, 46, 69);
+    font-weight: 400;
+    margin: 0;
+    min-width: 160px;
+}
+
+.references {
+    background-color: rgb(125, 114, 57);
+    font-size: calc(16px + .5vw);
+    box-sizing: border-box;
+    padding: 10vh 15%;
+    display: flex;
+    color: white;
+}
+
+.futurabold {
+    font-family: FuturaBold,'Times New Roman', sans-serif;
+}
+
+i {
+    padding: 6px 16px;
+}
+
+li {
+    padding: 6px 0;
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+.wrapped {
+    flex-wrap: wrap;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    gap: 48px;
+    flex-wrap: wrap;
+    background-color: rgb(16, 48, 75);
+    color: rgb(139, 165, 197);
+    padding: 3vh 15%;
+}
+
+.info {
+    max-width: 800px;
+}
